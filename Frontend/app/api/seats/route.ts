@@ -2,10 +2,8 @@ import { NextResponse } from "next/server";
 import axios from "axios";
 
 const SEAT_API_URL = process.env.SERVER_API_URL + '/seat';
-console.log(SEAT_API_URL);
 // To handle a GET request to /api/seat
 export async function GET() {
-  console.log("---------------",SEAT_API_URL);
   try {
     const response = await axios.get(SEAT_API_URL, {
       headers: {
