@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-const SEAT_API_URL = process.env.NEXT_PUBLIC_API_URL + '/seat/cancel';
+const SEAT_API_URL = process.env.SERVER_API_URL + '/seat/cancel';
 
 // To handle a PUT request to /api/seat/cancel
 export async function PUT(request: Request) {

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-const SEAT_API_URL = process.env.NEXT_PUBLIC_API_URL + '/seat/book';
+const SEAT_API_URL = process.env.SERVER_API_URL + '/seat/book';
 // To handle a POST request to /api/seat/book
 export async function POST(request: Request) {
   try {

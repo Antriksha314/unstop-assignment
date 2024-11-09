@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-const SEAT_API_URL = process.env.NEXT_PUBLIC_API_URL + '/seat/reset';
+const SEAT_API_URL = process.env.SERVER_API_URL + '/seat/reset';
 
 // To handle a GET request to /api/seat/reset
 export async function GET() {
